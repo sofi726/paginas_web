@@ -1,0 +1,362 @@
+.seccion-hero {
+  background-image: url('/img/inicio.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+}
+
+.seccion-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 253, 253, 0.904);
+  z-index: 0;
+}
+
+.seccion-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Estilo para el texto VAPER ZERO */
+.navbar-brand {
+    color: #faf7f8 !important; /* Rosa */
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Alinearlo a la izquierda */
+.navbar {
+    justify-content: flex-start !important;
+}
+
+/* Cambiar color de fondo de la barra */
+.tu-clase-de-barra {
+    background-color: #210f36; /* Rosa */
+    color: rgb(253, 245, 245); /* Texto blanco para contraste */
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Botón rosado */
+.btn-agendar {
+    background-color: #13010a; /* Rosa */
+    color: rgb(12, 10, 10);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-agendar:hover
+ 
+     /* Nombre del producto */
+     .nombre-producto {
+        font-size: 1rem;
+       font-weight: bold;
+         color: #333;
+        margin-bottom: 5px;
+}
+
+      /* Precio del producto */
+      .precio-producto {
+           font-size: 0.9rem;
+           color: #666;
+}
+
+          /* Para que el "COP" sea más pequeño y en gris claro */
+         .precio-producto span {
+           font-size: 0.8rem;
+            color: #999;
+}
+
+.product-card {
+    width: 200px;           /* fija el ancho */
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}.vapes-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px 0;
+}
+
+/* CARD DEL VAPE */
+.vape-card {
+  text-align: center;
+  background: #fff;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
+  border: 2px solid transparent;
+  width: 100%;       /* que nunca crezca ni se desordene */
+  box-sizing: border-box;
+}
+
+/* HOVER — EFECTO QUE YA TENÍAS Y NO SE ROMPE */
+.vape-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* IMAGEN FIJA — para que no se ponga gigante */
+.vape-card img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* SELECCIONADO — NO ROMPE EL HOVER */
+.vape-card.selected {
+  border-color: #8a2be2;
+  transform: translateY(-8px) scale(1.03);  /* suave */
+
+}
+
+.vapes-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas = 4 por fila */
+  gap: 25px; /* espacio entre cada vape */
+  padding: 20px 0;
+}
+
+/* BOTÓN WHATSAPP */
+.whatsapp-btn {
+  background-color: #25d366;
+  border: none;
+  padding: 15px 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 25px;  /* espacio entre cards */
+    padding: 20px; /* espacio hacia dentro del contenedor */
+
+
+}
+
+.vape-card p,
+.vape-card h3 {
+    color: #807e7e;  /* gris suave */
+}
+
+ .vape-card p,
+.vape-card h3 {
+    color: #686767;    /* gris suave */
+    font-weight: 700;    /* más gorditas */
+}
+.productos {
+  display: flex;
+  justify-content: center; /* Centra todo en la fila */
+  gap: 20px; /* Espacio entre productos */
+  flex-wrap: wrap; /* Si no caben, pasan a la siguiente fila */
+  padding: 20px;
+}
+
+.producto {
+  width: 300px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain; /* Mantiene proporción */
+}
+
+.producto h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.productos {
+  display: flex;
+  justify-content: flex-start; /* Ahora se alinean a la izquierda */
+  gap: 40px; /* Espacio entre productos */
+  flex-wrap: wrap; /* Para que se bajen si no caben */
+  padding: 20px;
+}
+
+
+.productos {
+  display: flex;
+  justify-content: center; /* Centra todo en la fila */
+  gap: 40px; /* Espacio entre productos */
+  flex-wrap: wrap; /* Si no caben, pasan a la siguiente fila */
+  padding: 20px;
+}
+
+.producto {
+  width: 300px;
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain; /* Mantiene proporción */
+}
+
+.producto h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.producto p {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+}
+
+.productos {
+  display: flex;
+  justify-content: flex-start; /* Ahora se alinean a la izquierda */
+  gap: 40px; /* Espacio entre productos */
+  flex-wrap: wrap; /* Para que se bajen si no caben */
+  padding: 20px;
+}
+producto p {
+  font-size: 16px; /* tamaño fijo */
+  max-width: 100%; /* evita que se estire */
+  margin: 5px 0;
+}
+
+.seccion-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.seccion-hero .container {
+  position: relative;
+  z-index: 1;
+}
+.video-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 25vh;
+}
+
+
+
+
+.video-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+
+
+    
+.articulo-blog { 
+    background-color: #fc7cbc; 
+    color: rgb(10, 6, 6); 
+    padding: 15px; 
+    margin-top: 10px; 
+    border-radius: 5px; }
+
+   desde-aqui {
+  background-color: #ffd1e6; /* rosado */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.desde-aqui {
+  background-color: #ffd1e6; /* Fondo rosado */
+  padding: 50px 20px;
+  text-align: center;
+  min-height: 100vh; /* Hace que cubra la pantalla */
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center; /* centra en la fila */
+  gap: 50px; /* espacio entre cuadros */
+  flex-wrap: wrap; /* hace que se bajen si no caben */
+  margin: 30px auto;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  border: 1px solid #ddd8e6;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* control de tamaño de las imágenes */
+.card img {
+  max-width: 100%;
+  max-height: 110%;
+  object-fit: contain; /* que se ajuste sin deformarse */
+}
+
+
+.luxury-btn-small {
+    background-color: #000000;       /* negro elegante */
+    color: #C9A252;                  /* dorado suave */
+    border: 1.5px solid #C9A252;     /* borde dorado más delgado */
+    padding: 7px 14px;               /* MÁS PEQUEÑO */
+    border-radius: 6px;              /* más delicado */
+    font-size: 13px;                 /* más pequeño */
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    width: 80%;                      /* más pequeño visual */
+    margin-top: 6px;
+    transition: 0.3s ease;
+}
+
+.luxury-btn-small:hover {
+    background-color: #C9A252;       /* dorado */
+    color: #000000;                  /* negro */
+    transform: scale(1.04);
+    box-shadow: 0 0 8px rgba(201,162,82,0.55);
+}
+
+.luxury-btn-small:active {
+    transform: scale(0.94);
+}

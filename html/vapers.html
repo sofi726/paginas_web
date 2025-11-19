@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<!-- Enlace a Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Enlace a tu CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+
+<title>portal servicios </title>
+<style>
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .producto {
+    text-align: center;
+  }
+
+  .producto p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+</style>
+
+
+</head>
+
+</html>
+
+<html>
+<body>
+
+
+   
+
+ <!-- barra de encabezado -->
+   <div class="tu-clase-de-barra">
+  siempre calidad siempre vape zero
+</div>
+ <!-- modulo de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container">
+  <nav class="navbar">
+  <img src="/img/logo.jpg" alt="Logo Hair Beauty" width="100">
+</nav>
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/vapers.html">vapers</a></li>
+        <li class="nav-item">
+  <a class="nav-link" href="#" onclick="showCart()">
+    🛒 <span id="cart-count">0</span>
+</a>
+</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="cart-display" style="
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    margin: 30px auto; 
+    max-width: 700px; 
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* INICIA OCULTO */
+    font-family: sans-serif;
+">
+    <h3 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">🛒 Tu Pedido</h3>
+    
+    <div id="cart-content" style="margin-bottom: 20px;">
+        El carrito está vacío.
+    </div>
+    
+    <button onclick="sendCartToWhatsApp()" style="
+        width: 100%;
+        padding: 15px;
+        background-color: #05421b; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1em;
+        font-weight: bold;
+    ">Enviar Pedido por WhatsApp</button>
+</div>
+</div>
+
+
+<div class="vapes-container">
+
+  <div class="vape-card">
+  <img src="/img/vape1.webp">
+  <p>Priv Bar</p>
+  <p>1500 puff - 30000 COP</p>
+<button class="luxury-btn-small" onclick="addToCart('Priv Bar', 30000)">Agregar al carrito</button>
+    
+</button>
+</div>
+
+ <div class="vape-card">
+  <img src="/img/vape2.webp">
+  <p>vaporizador orion</p>
+  <p>1500 puff - 40000  COP</p>
+<button class="luxury-btn-small" onclick="addToCart('vaporizador orion', 40000)">Agregar al carrito</button>
+</div>
+
+<div class="vape-card">
+  <img src="/img/vape1.webp">
+  <p>sthill </p>
+  <p>1500 puff - 50000 COP</p>
+<button class="luxury-btn-small" onclick="addToCart('vaporizador sthill', 50000)">Agregar al carrito</button>
+</div>
+
+  <div class="vape-card">  
+  <img src="/img/vape1.webp">
+  <p>Priv Bar</p>
+  <p>1500 puff - 30000 COP</p>
+<button class="luxury-btn-small" onclick="addToCart('Priv Bar', 30000)">Agregar al carrito</button>
+</div>
+
+</div>
+
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+</body>
+
+</html>
